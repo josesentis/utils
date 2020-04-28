@@ -1,4 +1,3 @@
-
 let currentScroll = document.pageYOffset;
 
 const scrollSkewer = () => {
