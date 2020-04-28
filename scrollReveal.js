@@ -12,4 +12,14 @@ const scrollReveal = () => {
   });
 }
 
-export default scrollReveal;
+const init = () => {
+  scrollReveal();
+
+  window.addEventListener('scroll', scrollReveal);
+};
+
+const destroy = () => {
+  window.removeEventListener('scroll', scrollReveal);
+};
+
+export default { init, destroy };
